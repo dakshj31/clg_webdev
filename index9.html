@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Cards</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef1f5;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1000px;
+  }
+
+  .profile-card {
+    background: #ffffff;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .profile-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #4a6cf7;
+  }
+
+  .profile-name {
+    margin: 0 0 4px;
+    font-size: 20px;
+    color: #222;
+  }
+
+  .profile-role {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #4a6cf7;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .profile-bio {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .profile-socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .profile-socials a {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #4a6cf7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background 0.2s ease;
+  }
+
+  .profile-socials a:hover {
+    background: #3452c4;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <div class="profile-card">
+      <img class="profile-avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQCBbrk_I236NWtb-W1PyI64b-Rmxi4e2E9K8hz-CTanOu3hwOx08L9mF&s=10" alt="Profile picture">
+      <h2 class="profile-name">Aarav Sharma</h2>
+      <p class="profile-role">UI/UX Designer</p>
+      <p class="profile-bio">Crafting clean, user-focused designs with a passion for simplicity and detail.</p>
+      <div class="profile-socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <img class="profile-avatar" src="https://i.pinimg.com/236x/df/24/d2/df24d2cf1efcd47a2fef5b3e83846aff.jpg" alt="Profile picture">
+      <h2 class="profile-name">Priya Verma</h2>
+      <p class="profile-role">Frontend Developer</p>
+      <p class="profile-bio">Turning ideas into responsive, interactive web experiences using modern tools.</p>
+      <div class="profile-socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <img class="profile-avatar" src="https://images.meme-arsenal.com/7bd36562f0b2699427b43d98d1e8bed2.jpg" alt="Profile picture">
+      <h2 class="profile-name">Rohan Mehta</h2>
+      <p class="profile-role">Product Manager</p>
+      <p class="profile-bio">Bridging strategy and execution to build products people love to use.</p>
+      <div class="profile-socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
